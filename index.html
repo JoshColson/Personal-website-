@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<div class="index-page">
+			<head>	
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<title>Josh Colson - Homepage</title>
+				<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+				<link rel="stylesheet" href="styles.css">
+			</head>
+			<body>
+				<div class="container">
+					<div class="nav-wrapper">
+						<div class="left-side">
+							<div class="nav-spacer"></div>
+							<div class="nav-link-wrapper active-nav-link">
+								<a href="index.html">Home</a>
+							</div>
+							<div class="nav-spacer"></div>
+							<div class="nav-link-wrapper">
+								<a href="education.html">Education</a>
+							</div>
+							<div class="nav-spacer"></div>
+							<div class="nav-link-wrapper">
+								<a href="gamedesign.html">Game Design</a>
+							</div>
+							<div class="nav-spacer"></div>
+							<div class="nav-link-wrapper">
+								<a href="portfolio.html">Website Design</a>
+							</div>
+							<div class="nav-spacer"></div>
+							<div class="nav-link-wrapper">
+								<a href="skills.html">Skills & Qualities</a>
+							</div>
+							<div class="nav-spacer"></div>
+							<div class="nav-link-wrapper">
+								<a href="about.html">About</a>
+							</div>
+							<div class="nav-spacer"></div>
+							<div class="nav-link-wrapper">
+								<a href="contact.html">Contact</a>
+							</div>
+							<div class="nav-spacer"></div>
+						</div>
+
+						<div class="right-side">
+							<div class="brand">
+								<div>JOSH COLSON</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="content-wrapper">
+						<div class="portfolio-items-wrapper"> 
+							
+							<div class="portfolio-item-wrapper"> 
+								
+								<div class="portfolio-img-background" style="background-image:url(My_Images/thumbnails/Falmouth.jpg)"></div>
+								
+							
+								<div class="img-text-wrapper">
+
+									<div class="logo-wrapper">
+										<a href="education.html">
+											<img src="My_Images/logos/falmouthlogo.png" alt="">
+										</a>
+
+									</div>
+
+									<div class="subtitle">
+										<a href="education.html">EDUCATION</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="portfolio-item-wrapper"> 
+								<div class="portfolio-img-background" style="background-image:url(My_Images/thumbnails/employment.jpg)"></div>
+							
+								<div class="img-text-wrapper">
+									<div class="logo-wrapper">
+										<a href="gamedesign.html">
+											<img src="My_Images/logos/unitylogo.png" alt="">
+										</a>
+									</div>
+
+									<div class="subtitle">
+										<a href="gamedesign.html">GAME DESIGN</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="portfolio-item-wrapper"> 
+								<div class="portfolio-img-background" style="background-image:url(My_Images/thumbnails/portfolio.jpg)"></div>
+							
+								<div class="img-text-wrapper">
+									<div class="logo-wrapper">
+										<a href="portfolio.html">
+											<img src="My_Images/logos/htmllogo.png" alt="">
+										</a>
+									</div>
+
+									<div class="subtitle">
+										<a href="portfolio.html">Website Design</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="portfolio-item-wrapper"> 
+								<div class="portfolio-img-background" style="background-image:url(My_Images/thumbnails/skills.jpg)"></div>
+							
+								<div class="img-text-wrapper">
+									<div class="logo-wrapper">
+										<a href="skills.html">
+											<img src="My_Images/logos/clogo.png" alt="">
+										</a>
+										
+									</div>
+
+									<div class="subtitle">
+										<a href="skills.html">SKILLS & QUALITIES</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="portfolio-item-wrapper"> 
+								<div class="portfolio-img-background" style="background-image:url(My_Images/thumbnails/about.jpg)"></div>
+							
+								<div class="img-text-wrapper">
+									<div class="logo-wrapper">
+										<a href="about.html">
+											<img src="My_Images/logos/aboutlogo.png" alt="">
+										</a>
+									</div>
+
+									<div class="subtitle">
+										<a href="about.html">ABOUT</a>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="portfolio-item-wrapper"> 
+								<div class="portfolio-img-background" style="background-image:url(My_Images/thumbnails/contact.jpg)"></div>
+							
+								<div class="img-text-wrapper">
+									<div class="logo-wrapper">
+										<a href="contact.html">
+											<img src="My_Images/logos/contactlogo.png" alt="">
+										</a>
+									</div>
+
+									<div class="subtitle">
+										<a href="CONTACT.html">CONTACT</a>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+					<div class="index-footer">
+						<div class="copywrite">
+							<p>Joshua Colson, <span>&#169;</span> 2021</p>
+						</div>
+					</div>
+				</div>
+			</body>
+			<script>
+				const portfolioItems = document.querySelectorAll ('.portfolio-item-wrapper')
+
+				portfolioItems.forEach(portfolioItem => {
+					portfolioItem.addEventListener('mouseover', () => {
+						portfolioItem.childNodes[1].classList.add('img-darken');
+					})
+
+					portfolioItem.addEventListener('mouseout', () => {
+						portfolioItem.childNodes[1].classList.remove('img-darken');
+					})
+				})
+			</script>		
+
+</div>
